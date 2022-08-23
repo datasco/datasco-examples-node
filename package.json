@@ -1,0 +1,18 @@
+{
+  "name": "datasco-examples-node",
+  "version": "1.0.0",
+  "description": "Examples of use Datasco API",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datasco/datasco-examples-node.git"
+  },
+  "author": "datasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datasco/datasco-examples-node/issues"
+  },
+  "homepage": "https://github.com/datasco/datasco-examples-node#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
+}
