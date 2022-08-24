@@ -7,16 +7,17 @@
 const fetch = require('node-fetch')
 
 void (async() => {
+	const { API_KEY } = require('../credentials.json')
+
 	// 1. Send request to '/api/info' route
 	const resp = await fetch("http://api.datasco.ru/api/info", {
 		method: 'POST',
-		body: {},
-		headers: { 'Authorization': 'c8e61c46-8919-4412-9420-7' }
+		headers: { 'Authorization': API_KEY }
 	})
 
 	// 2. Got result! Get the JSON object
 	const result = await resp.json()
-	
+
 	// 3. Print the result to console
 	console.log(result)
 })()
